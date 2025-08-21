@@ -1,9 +1,3 @@
-https://owncare.onrender.com/
-
-AI health insurance plan assistant compatible with 4,500+ insurance plans from 140+ insurance companies.
-Designed to seamlessly allow users to better understand their healthcare plan.
-
-
 ## Prerequisites
 
 Before setting up the project, make sure you have the following installed:
