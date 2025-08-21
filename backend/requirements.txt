@@ -1,0 +1,3 @@
+docling
+openai
+supabase

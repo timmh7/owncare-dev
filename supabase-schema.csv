@@ -1,0 +1,27 @@
+table_name,column_name,data_type,is_nullable
+insurance_companies,name,text,NO
+insurance_companies,logo_url,text,YES
+insurance_companies,company_id,uuid,NO
+insurance_plans,metal_level,text,YES
+insurance_plans,company,text,YES
+insurance_plans,plan_number,text,NO
+insurance_plans,plan_name,text,YES
+insurance_plans,plan_type,text,YES
+insurance_plans,sob_url,text,YES
+insurance_plans,plan_id,uuid,NO
+profiles,user_profile_id,uuid,NO
+profiles,user_id,uuid,NO
+profiles,email,text,YES
+profiles,full_name,text,YES
+profiles,created_at,timestamp with time zone,NO
+profiles,updated_at,timestamp with time zone,NO
+sob_embeddings,embedding_id,uuid,NO
+sob_embeddings,content,text,NO
+sob_embeddings,embedding,vector(3072),NO
+sob_embeddings,sob_url,text,YES
+user_insurance,user_insurance_id,uuid,NO
+user_insurance,user_id,uuid,NO
+user_insurance,plan_id,uuid,NO
+user_insurance,created_at,timestamp with time zone,NO
+user_insurance,updated_at,timestamp with time zone,NO
+user_insurance,company_name,text,YES

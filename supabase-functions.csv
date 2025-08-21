@@ -1,0 +1,34 @@
+routine_name,routine_definition
+match_embeddings,"
+begin
+    return query
+    select 
+        se.embedding_id, 
+        se.content, 
+        se.embedding,
+        se.embedding <=> query_embedding as distance
+    from sob_embeddings se
+    where se.sob_url = target_sob_url
+    order by distance
+    limit match_count;
+end;
+"
+match_embeddings,"
+begin
+    return query
+    select 
+        se.embedding_id, 
+        se.content, 
+        se.embedding,
+        se.embedding <=> query_embedding as distance
+    from sob_embeddings se  -- give the table an alias
+    order by distance
+    limit match_count;
+end;
+"
+update_updated_at_column,"
+BEGIN
+NEW.updated_at = now();
+RETURN NEW;
+END;
+"
